@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+}
+body{
+    overflow: hidden;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+    
+
+}
+
+.title {
+
+    margin-top: 9.125rem;
+}
+.title h1{
+    font-size: 4rem;
+    text-align: center;
+    
+}
+
+.content{
+
+    display: flex;
+    flex-direction: column;     
+}
+
+.content-button{
+   
+    background-color: black;
+    color: white;
+    margin: 1rem 5rem;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;   
+
+}
+.content-button:hover{
+    color:yellow;
+    cursor:pointer;
+    transform: translateY(-10px);
+}
+
+.footer
+{
+   width: 100%;
+   background-color: black;
+   color: white;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: flex-end;
+   padding: 1rem 0.5rem;
+   margin: 0 1rem; 
+}
+.contact-link{
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; 
+}
+.contact-link:hover{
+    color: yellow;
+   
+    font-size: 1.7rem;
+}
+
+.social-icons{
+    padding: 0 1rem;
+}
+.social-item{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    position: relative;
+    bottom: 0.5rem;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;   
+}
+.social-item:hover{
+    font-size: 1.7rem;
+}
+.mail:hover{
+    color:#D83A56 ;
+
+}
+.twitter:hover{
+    color:#77ACF1;
+
+}
+.github:hover{
+    color:#7952B3;
+}
+
+@media only screen and (min-width:650px)
+{
+    .content
+    {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    .content-button{
+        background-color: black;
+        color: white;
+       
+        padding: 1rem;
+        flex: 1 1 33%;
+      
+       
+    }
+    .content-button :hover{
+        color: yellow;
+    }
+
+}
