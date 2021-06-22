@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- title -->
+    <title>Sorting Visualizer</title>
+    <!-- /*fontawsome cdn*/ -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- linking style.css -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <!-- body -->
+  <body>
+    <!--navbar-->
+    <div class="navbar">
+      <div class="brand">visualiser</div>
+      <div class="nav-menu">
+        <a href="/sorting/sorting.html" class="nav-item active">sorting</a>
+        <a href="#" class="nav-item">path finder</a>
+        <a href="#" class="nav-item">about us</a>
+      </div>
+    </div>
+    <!--nabbar end-->
+    <center>
+      <section class="head">Selection Sort Visualizer</section>
+    </center>
+    <section class="data-container"></section>
+
+    <!-- "Generate New Array" button -->
+    <center>
+      <div class="buttonsin">
+        <button class="btn1" onclick="generate()" id="Button1">
+          <i class="fas fa-redo"></i>
+        </button>
+
+        <!-- "Selection Sort" button -->
+        <button class="btn2" onclick="SelectionSort(),disable()" id="Button2">
+          <i class="fas fa-play"></i>
+        </button>
+        <button class="btn1" onclick="generate()" id="Button3">
+          <i class="fas fa-times"></i>
+        </button>
+       
+
+        <input type="range" min="50" max="800" value="50" class="slider" id="myRange" oninput ="delaySpeed()">
+
+
+      </div>
+    </center>
+
+    <div class="footer">
+      <div class="contact-link">contact us</div>
+      <div class = 'social-icons'>
+
+          <a href="#" class="social-item"><i class="fas fa-envelope-open-text mail"></i></a>
+          <a href="#" class="social-item"><i class="fab fa-twitter twitter"></i></a>
+          <a href="#" class="social-item"><i class="fab fa-github-square github"></i></a>
+        </div>
+      
+  </div>
+  </body>
+
+  <!-- linking index.js -->
+  <script src="index.js"></script>
+</html>
