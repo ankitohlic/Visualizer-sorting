@@ -22,8 +22,6 @@ body{
 .title {
 
     margin-top: 9.125rem;
-   
-
 }
 .title h1{
     font-size: 4rem;
@@ -72,11 +70,12 @@ body{
     font-size: 1.5rem;
     padding: 0 1rem;
     text-transform: uppercase;
+    cursor: pointer;
     transition: all 0.3s ease-in-out; 
 }
 .contact-link:hover{
     color: yellow;
-    text-decoration: underline;
+   
     font-size: 1.7rem;
 }
 
