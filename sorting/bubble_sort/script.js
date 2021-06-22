@@ -10,7 +10,7 @@ function delaySpeed(){
 
 // Function to generate the array of bar
 
-function generatearray(num =45) {
+function generatearray(num =47) {
 	for (var i = 0; i < num; i++) {
 
 		// Return a value from 1 to 100 (both inclusive)
