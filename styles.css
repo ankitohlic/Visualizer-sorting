@@ -38,6 +38,7 @@ body{
 }
 
 .content-button{
+   
     background-color: black;
     color: white;
     margin: 1rem 5rem;
@@ -46,16 +47,18 @@ body{
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;   
 
 }
 .content-button:hover{
     color:yellow;
     cursor:pointer;
+    transform: translateY(-10px);
 }
 
 .footer
 {
-    width: 100%;
+   width: 100%;
    background-color: black;
    color: white;
    display: flex;
@@ -69,9 +72,12 @@ body{
     font-size: 1.5rem;
     padding: 0 1rem;
     text-transform: uppercase;
+    transition: all 0.3s ease-in-out; 
 }
 .contact-link:hover{
     color: yellow;
+    text-decoration: underline;
+    font-size: 1.7rem;
 }
 
 .social-icons{
@@ -82,13 +88,24 @@ body{
     color: white;
     padding: 0.5rem;
     position: relative;
+    bottom: 0.5rem;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;   
 }
+.social-item:hover{
+    font-size: 1.7rem;
+}
+.mail:hover{
+    color:#D83A56 ;
 
+}
+.twitter:hover{
+    color:#77ACF1;
 
-
-
-
-
+}
+.github:hover{
+    color:#7952B3;
+}
 
 @media only screen and (min-width:650px)
 {
@@ -113,7 +130,4 @@ body{
         color: yellow;
     }
 
-    .footer{
-        
-    }
 }
