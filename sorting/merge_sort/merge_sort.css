@@ -188,6 +188,8 @@
 /* footer starts here  */
 
 .footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 10vh;
   background-color: black;
@@ -196,27 +198,43 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  bottom: 0;
 }
 .contact-link {
   font-size: 1.5rem;
   padding: 0 1rem;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 .contact-link:hover {
   color: yellow;
-  cursor: pointer;
+  font-size: 1.7rem;
 }
 
 .social-icons {
-  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
 }
 .social-item {
   text-decoration: none;
   color: white;
-  padding: 0.5rem;
-  position: relative;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.social-item:hover {
+  font-size: 1.7rem;
+}
+.mail:hover {
+  color: #d83a56;
+}
+.twitter:hover {
+  color: #77acf1;
+}
+.github:hover {
+  color: #7952b3;
 }
 
 /* footer ends here  */
