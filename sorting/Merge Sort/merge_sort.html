@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sorting-algo</title>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="merge_sort.css">
 </head>
 <body>
@@ -44,17 +44,22 @@
 
     <div class="controls">
         <div class="speed">
-            <button class="btn" id="speed-up">Speed Up</button>
-            <button class="btn" id="slow-down">Slow Down</button>
+            <input type="range" min="50" max="800" value="400" class="slider" id="myRange">
         </div>
         <div class="control">
-            <button class="btn" id="stop">STOP</button>
-            <button class="btn" id="sort">SORT</button>
+            <button class="disable2" id="stop">
+              <i class="fas fa-times"></i>
+            </button>
+            <button class="ctrl-btn1" id="start">
+                <i class="fas fa-play"></i>
+              </button>
         </div>
         <div class="size">
             <label for="">Input Size</label>
             <input type="number">
-            <button class="btn" id="generate">Generate Array</button>
+            <button class="ctrl-btn1 rotate" id="reset">
+                <i class="fas fa-redo"></i>
+              </button>
         </div>
     </div>
 
